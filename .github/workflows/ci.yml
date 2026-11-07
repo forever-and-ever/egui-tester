@@ -18,7 +18,7 @@ jobs:
     # job inside the workflow runs read-only.
     permissions:
       contents: write
-    uses: aoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoa/eternalist-foundry/.github/workflows/pipeline.yml@fleet
+    uses: forever-and-ever/eternalist-foundry/.github/workflows/pipeline.yml@fleet
     with:
       namespace: harness
 
@@ -26,7 +26,7 @@ jobs:
     name: Witness
     permissions:
       contents: write
-    uses: aoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoa/eternalist-foundry/.github/workflows/pipeline.yml@fleet
+    uses: forever-and-ever/eternalist-foundry/.github/workflows/pipeline.yml@fleet
     with:
       contract: foundry-witness.toml
       namespace: witness
@@ -46,7 +46,7 @@ jobs:
       - name: Check out the Foundry
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          repository: aoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoaoa/eternalist-foundry
+          repository: forever-and-ever/eternalist-foundry
           # The Foundry commit that raised the fleet compiler to Rust 1.99.0,
           # reachable from its main; this repository has no toolchain file of
           # its own. Advance it with each fleet compiler raise.
